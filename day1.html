@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/BLACK.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			kbd {
+				margin: 0px 0.1em;
+				padding: 0.1em 0.6em;
+				border-radius: 3px;
+				border: 1px solid rgb(204, 204, 204);
+				color: rgb(51, 51, 51);
+				line-height: 1.4;
+				font-family: Arial,Helvetica,sans-serif;
+				font-size: 10px;
+				display: inline-block;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 2px #ffffff;
+				background-color: rgb(247, 247, 247);
+				-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				text-shadow: 0 1px 0 #fff;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title slide -->
+				<section>
+					<h1>Toms River: Tech Ready</h1>
+					<hr>
+					<h3>Summer 2018</h3>
+					<h3>Python</h3>
+				</section>
+				
+				<!-- Intro slides -->
+				<section>
+					<!-- Instructor -->
+					<section> 
+						<h2>Instructor: Jackie Gerstein</h2>
+						<hr>
+						<ul>
+							<li>Technology teacher at UCMHS</li>
+							<li>Robotics mentor</li>
+							<li>Power Racing Series competitor</li>
+						</ul>
+					</section>
+					<!-- Survey -->
+					<section>
+						<a href="https://www.mentimeter.com/s/379fc95e3a68ab288c187f0e4bc02562/51b6279d79dc">I'd like to know more about what you're looking to learn</a>
+					</section>
+					<!-- Course Goals -->
+					<section>
+						<h2>Course Goals</h2>
+						<hr>
+						<ul>
+							<li>Become comfortable with programming</li>
+							<li>Develop logic skills</li>
+							<li>Create something with code</li>
+							<li>Learn about coding in the context of game creation</li>
+							<li>Learn how code can be used as a tool</li>
+						</ul>
+					</section>
+					<!-- Final Project -->
+					<section>
+						<h1>Final Project</h1>
+					</section>
+				</section>
+
+				<!-- Start of Day 1 -->
+				<section>
+					<h1>Day 1</h1>
+				</section>
+				
+				<!-- Today's goals -->
+				<section>
+					<h2>Today's Goals</h2>
+					<hr>
+					<ul>
+						<li>Understand what programming is</li>
+						<li>Interact with code</li>
+						<li>Create simple code</li>
+					</ul>
+				</section>
+
+				<!-- Expectations -->
+				<section>
+					<h2>My Expectations</h2>
+					<hr>
+					<ul>
+						<li>Rule 0: Don't make me make a new rule</li>
+						<li>Treat the people around you with respect</li>
+						<li>Don't talk over other people</li>
+						<li>Be open to trying things</li>
+						<li>Misuse of phones will result in being asked to put your phone out of reach</li>
+						<li>Have fun!</li>
+					</ul>
+				</section>
+				
+				<!-- What is programming? -->
+				<section>
+					<section>
+						<h1>What is programming?</h1>
+					</section>
+					<section>
+						<h2>Let's make a sandwich</h2>
+						<hr>
+						<p>Write directions for me to sit at the desk with the grey chair</p>
+					</section>
+					<section>
+						<h2>What is programming used for?</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Software development</li>
+							<li class="fragment">Web development</li>
+							<li class="fragment">Automation and controlling electronics</li>
+							<li class="fragment">Scientific research</li>
+							<li class="fragment">Math and data analysis</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Try it -->
+				<section>
+					<section><h1>Try it!</h1></section>
+					<section>
+						<h2>Hello world</h2>
+						<hr>
+						<ul>
+							<li>Open Python Idle from the start menu</li>
+							<li>Type <kbd>print("Hello World")</kbd> and press enter</li>
+						</ul>
+					</section>
+					<section>
+						<h2>What happened?</h2>
+						<hr>
+						<ul>
+							<li class="fragment">You wrote Python code (a print function)</li>
+							<li class="fragment">An interpreter turned your code into bytecode</li>
+							<li class="fragment">Computer executed your code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Try some more</h2>
+						<hr>
+						<p>Try changing what's inside the quotation marks</p>
+					</section>
+				</section>
+
+				<!-- Running python code -->
+				<section>
+					<section>
+						<h2>Running Code</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Can run a program saved in a text file</li>
+							<li class="fragment">Can use REPL/interactive shell</li>
+						</ul>
+					</section>
+					<section>
+						<h2>REPL</h2>
+						<hr>
+						<ul>
+							<li class="fragment"><em>R</em>ead <em>E</em>valuate <em>P</em>rint <em>L</em>oop</li>
+							<li class="fragment">Quickly run simple code</li>
+							<li class="fragment">Run a line of code, and display the return value</li>
+							<li class="fragment">Test code and see what it does</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Return Values</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Each line returns a certain value when evaluated</li>
+							<li class="fragment">Try entering numbers. What's returned?</li>
+							<li class="fragment">Try text. Make sure it's in quotes.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Printing</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Printing is different from returning values</li>
+							<li class="fragment"><code>print("Put something in here to print it")</code> will display the text in quotes in the console</li>
+							<li class="fragment">What is returned?</li>
+							<li class="fragment"><kbd>print()</kbd> is a function</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<!-- Math -->
+				<section>
+					<section>
+						<h2>Math</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Python can do math</li>
+							<li class="fragment">Mathematical operators: <kbd> + </kbd>, <kbd> - </kbd>, <kbd> * </kbd>, <kbd> / </kbd>, <kbd> ** </kbd>, <kbd> % </kbd></li>
+							<li class="fragment"><a href="https://docs.python.org/3/library/math.html">The math library</a></li>
+							<li class="fragment">Data types: integer & float</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Comparisons</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Comparison operators are same as in math class</li>
+							<li class="fragment">Try some comparisons. Note any errors you get</li>
+							<li class="fragment">Data types: boolean</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Strings -->
+				<section>
+					<h2>Strings</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Text</li>
+						<li class="fragment">Always in quotes</li>
+						<li class="fragment"><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"><ore string info</a></li>
+					</ul>
+				</section>
+
+				<!-- Variables -->
+				<section>
+					<section>
+						<h2>Variables</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Name representing a value</li>
+							<li class="fragment">Store values to use again later</li>
+							<li class="fragment">Create or modify with assignment statements</li>
+							<li class="fragment"><code>x = 5</code></li>
+						</ul>
+					</section>
+					<section>
+						<h2>User input</h2>
+						<hr>
+						<ul>
+							<li class="fragment"><code>input()</code> is a function, much like print</li>
+							<li class="fragment">Action: prompts user for input</li>
+							<li class="fragment">Returns: user input as a string</li>
+							<li class="fragment">Optional: Create a prompt using a string in the parentheses</li>
+							<li class="fragment">Try it in REPL - can you save the value to use again later?</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- String formatting -->
+				<section>
+					<section>
+						<h2>Formatting</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Many built in ways to format strings</li>
+							<li class="fragment">Built in tools for many common uses</li>
+							<li class="fragment"><code>"ToMs RiVeR".title()</code></li>
+							<li class="fragment"><code>"Hello from Toms River"[0:5]</code></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Inserting Values</h2>
+						<hr>
+						<ul>
+							<li class="fragment"><code>"Hello {}, how are you today?".format("Fred")</code></li>
+							<li class="fragment">Can have multiple values - separate with commas</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Daily Challenge</h2>
+					<hr>
+					<p>Create a Mad Libs game using input() and string formatting.</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
