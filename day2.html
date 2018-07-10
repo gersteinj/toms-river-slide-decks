@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tech Ready: Python | Day 2</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			kbd {
+				margin: 0px 0.1em;
+				padding: 0.1em 0.6em;
+				border-radius: 3px;
+				border: 1px solid rgb(204, 204, 204);
+				color: rgb(51, 51, 51);
+				line-height: 1.4;
+				font-family: Arial,Helvetica,sans-serif;
+				font-size: 10px;
+				display: inline-block;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 2px #ffffff;
+				background-color: rgb(247, 247, 247);
+				-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				text-shadow: 0 1px 0 #fff;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title slide -->
+				<section>
+					<h1>Toms River: Tech Ready</h1>
+					<hr>
+					<h3>Summer 2018</h3>
+					<h3>Python</h3>
+					<h3>Day 2</h3>
+				</section>
+				
+				<!-- Start of Day 1 -->
+				<section>
+					<h1>Day 2</h1>
+				</section>
+				
+				<!-- Today's goals -->
+				<section>
+					<h2>Today's Goals</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Create conditional statements</li>
+						<li class="fragment">Create loops</li>
+						<li class="fragment">Create drawings with Turtle</li>
+						<li class="fragment">Use pseudocode to plan code	</li>
+						<li class="fragment">Create functions</li>
+					</ul>
+				</section>
+
+				<!-- Review -->
+				<section>
+					<h2>Review</h2>
+					<hr>
+					<ul>
+						<li class="fragment">What is programming?</li>
+						<li class="fragment">What are the four data types we used?</li>
+						<li class="fragment">Name a function we used and what it does</li>
+					</ul>
+				</section>
+
+				<!-- Final projects -->
+				<section>
+					<h2>Final Project</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Over the course of today, think about what you want to do</li>
+						<li class="fragment">Does not have to be a game - consider UN sustainability goals</li>
+						<li class="fragment">I'll collect info this afternoon</li>
+						<li class="fragment">We'll plan together</li>
+					</ul>
+				</section>
+
+				<!-- Saving -->
+				<section>
+					<h2>Managing files</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Create a folder for code on your U drive</li>
+						<li class="fragment">Go to the "file" section in the sidebar</li>
+						<li class="fragment">Choose open folder and select your new code folder</li>
+						<li class="fragment">Create a "day 2" folder all your code will go in</li>
+					</ul>
+				</section>
+
+				<!-- Pseudocode -->
+				<section>
+					<section>
+						<h2>Pseudocode</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Describe what code does in precise language</li>
+							<li class="fragment">No actual code</li>
+							<li class="fragment">Plan functionality</li>
+							<li class="fragment">Doesn't require knowledge of programming languages</li>
+							<li class="fragment">Often paired with flowcharts</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Flowcharts</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Diagram to show how information is handled</li>
+							<li class="fragment">Helps visualize code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Try it</h2>
+						<hr>
+						<p>How can you tell if a number is even or odd?</p>
+					</section>
+				</section>
+
+				<!-- Conditional Statements -->
+				<section>
+					<section>
+						<h1>Conditional Statements</h1>
+					</section>
+					<section>
+						<h2>How they work</h2>
+						<hr>
+						<ul>
+							<li class="fragment"><em>if</em> some condition is true, <em>then</em> do something</li>
+							<li class="fragment"><em>if</em> some condition is true, <em>then</em> do something. <em>Otherwise</em> do some other thing</li>
+							<li class="fragment"><em>if</em> it's raining out <em>then</em> take an umbrella with you.</li>
+							<li class="fragment"><em>if</em> the user is logged in, <em>then</em> show their profile. <em>Otherwise</em> show the login screen</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Coding it</h2>
+						<hr>
+						<pre><code data-trim>
+							my_num = 10
+
+							if my_num == 5:
+								print("You got it!")
+						</code></pre>
+					</section>
+					<section>
+						<h2>Coding it</h2>
+						<hr>
+						<pre><code data-trim>
+							location = "Toms River"
+
+							if location == "Toms River:
+								print("You're in the right place")
+							else:
+								print("How are you seeing this if you're not here?")
+					
+						</code></pre>
+					</section>
+					<section>
+						<h2>Challenge</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Create code for a number guessing game</li>
+							<li class="fragment">How many pieces of data do you need to keep track of?</li>
+							<li class="fragment">What would be good names for your data?</li>
+							<li class="fragment">Create pseudocode/flowchart</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Skills</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Take use input</li>
+							<li class="fragment">Compare information</li>
+							<li class="fragment">Take different actions depending on result of comparison</li>
+							<li class="fragment">How might this be used?</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Turtle -->
+				<section>
+					<section>
+						<h2>Turtle</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Command a "turtle" to draw on your screen</li>
+							<li class="fragment"><a href="https://docs.python.org/3.3/library/turtle.html?highlight=turtle">Documentation</a></li>
+							<li class="fragment">Open Python Idle and we'll try it</li>
+							
+						</ul>
+					</section>
+					<section>
+						<h2>Basic commands</h2>
+						<hr>
+						<ul>
+							<li><kbd>forward(distance)</kbd> & <kbd>back(distance)</kbd></li>
+							<li><kbd>right(angle)</kbd> & <kbd>left(angle)</kbd></li>
+							<li><kbd>penup()</kbd> & <kbd>pendown()</kbd></li>
+							<li><kbd>pencolor(colorstring)</kbd> or <kbd>pencolor((r,g,b))</kbd></li>
+							<li><kbd>goto(coordinates)</kbd></li>
+							<li><kbd>circle(radius)</kbd></li>
+							<li><kbd>stamp()</kbd></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Try it</h2>
+						<hr>
+						<ul>
+							<li>See what you can do with Turtle</li>
+							<li>Try finding other commands in the documentation</li>
+							<li>Draw a triangle and a square</li>
+							<li>Try drawing a star</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- loops -->
+				<section>
+					<section>
+						<h2>While loops</h2>
+						<hr>
+						<ul>
+							<li class="fragment"><em>While</em> something is true, <em>continue</em> to do something</li>
+							<li class="fragment"><em>While</em> you are in the pool, <em>continue</em> to swim</li>
+							<li class="fragment">What examples can you think of?</li>
+							<li class="fragment">Don't create an infinite loop!</li>
+						</ul>
+					</section>
+					<section>
+						<pre><code data-trim>
+							x = 0
+
+							while x < 4:
+								print(x)
+								x = x + 1
+						</code></pre>
+					</section>
+					<section>
+						<pre><code data-trim>
+							import turtle
+
+							for x in range(4):
+								turtle.fd(100)
+								turtle.lt(90)
+
+							turtle.mainloop()
+						</code></pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
