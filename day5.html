@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tech Ready: Python | Day 5</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			kbd {
+				margin: 0px 0.1em;
+				padding: 0.1em 0.6em;
+				border-radius: 3px;
+				border: 1px solid rgb(204, 204, 204);
+				color: rgb(51, 51, 51);
+				line-height: 1.4;
+				font-family: Arial,Helvetica,sans-serif;
+				font-size: 10px;
+				display: inline-block;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 2px #ffffff;
+				background-color: rgb(247, 247, 247);
+				-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				text-shadow: 0 1px 0 #fff;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title slide -->
+				<section>
+					<h1>Toms River: Tech Ready</h1>
+					<hr>
+					<h3>Summer 2018</h3>
+					<h3>Python</h3>
+					<h3>Day 5</h3>
+				</section>
+				
+				<!-- Start of Day 1 -->
+				<section>
+					<h1>Day 5</h1>
+				</section>
+				
+				<!-- Today's goals -->
+				<section>
+					<h2>Today's Goals</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Use pseudocode to plan code</li>
+						<li class="fragment">Combine prior knowledge into more complex code</li>
+						<li class="fragment">Use lists, functions, loops, and conditional statements</li>
+						<li class="fragment">Create and use dictionaries</li>
+						<li class="fragment">Use Pygame</li>
+
+					</ul>
+				</section>
+
+				<!-- Final projects -->
+				<section>
+					<h2>Final Project</h2>
+					<!-- <hr> -->
+					<!-- <ul>
+						<li class="fragment">Over the course of today, think about what you want to do</li>
+						<li class="fragment">Does not have to be a game - consider UN sustainability goals</li>
+						<li class="fragment">I'll collect info this afternoon</li>
+						<li class="fragment">We'll plan together</li>
+					</ul> -->
+				</section>
+
+				<!-- Review -->
+				<section>
+					<h2>Warmup/review</h2>
+					<hr>
+					<p>Try the Fizzbuzz exercise described on the warmup page</p>
+				</section>
+
+				<!-- resources -->
+				<section>
+					<ul>
+						<li><a href="http://trinket.io">Trinket</a>: Use block-based code and see the Python code it generates</li>
+						<li><a href="https://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html">Quick reference 1</a></li>
+						<li><a href="http://nbviewer.jupyter.org/github/justmarkham/python-reference/blob/master/reference.ipynb">Quick reference 2</a></li>
+					</ul>
+				</section>
+
+				<!-- Fizzbuzz -->
+				<section>
+					<h3>Fizzbuzz pseudocode</h3>
+
+					<pre><code data-trim>
+						# for each number in the range 0 to 1000:
+
+							# If the number is divisible by 3 and 7:
+
+								# print 'fizzbuzz'
+							
+							# Otherwise if the number is divisible by 3:
+
+								# print 'fizz'
+
+							# Otherwise if the number is divisible by 7:
+
+								# print 'buzz'
+							
+							# Otherwise:
+
+								# print the number
+					</code></pre>
+				</section>
+
+				<!-- Warmup 2 -->
+				<section>
+					<section>
+						<h2>Warmup 2</h2>
+						<hr>
+						<p>Task:</p>
+						<ul>
+							<li>Allow the user to type in words as many times as they want</li>
+							<li>Each word should be added to a list</li>
+							<li>When the user enters "done", stop taking new words and print this list</li>
+						</ul>
+					</section>
+					<section>
+						<pre><code data-trim>
+							# Create a blank list
+							words = []
+							user_word = ''
+
+							# Loop until the user is done. What would be a good thing to replace the ? that will always be true?
+							while ?:
+
+								# How can you add an item to a list?
+
+								# What test would you use to see if the user word is 'done'?
+								if ?
+									print(words)
+
+									# break will exit the loop
+									break
+						</code></pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
