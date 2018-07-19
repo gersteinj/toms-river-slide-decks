@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tech Ready: Python | Day 8</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			kbd {
+				margin: 0px 0.1em;
+				padding: 0.1em 0.6em;
+				border-radius: 3px;
+				border: 1px solid rgb(204, 204, 204);
+				color: rgb(51, 51, 51);
+				line-height: 1.4;
+				font-family: Arial,Helvetica,sans-serif;
+				font-size: 10px;
+				display: inline-block;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 2px #ffffff;
+				background-color: rgb(247, 247, 247);
+				-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				text-shadow: 0 1px 0 #fff;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title slide -->
+				<section>
+					<h1>Toms River: Tech Ready</h1>
+					<hr>
+					<h3>Summer 2018</h3>
+					<h3>Python</h3>
+					<h3>Day 8</h3>
+				</section>
+				
+				<!-- Start of Day 1 -->
+				<section>
+					<h1>Day 8</h1>
+				</section>
+				
+				<!-- Today's goals -->
+				<section>
+					<h2>Today's Goals</h2>
+					<hr>
+					<ul>
+						<li class="fragment">Use pseudocode to plan code</li>
+						<li class="fragment">Combine prior knowledge into more complex code</li>
+						<li class="fragment">Use lists, functions, loops, and conditional statements</li>
+						<li class="fragment">Use Pygame</li>
+						<li class="fragment">Use version control to back up and share code</li>
+					</ul>
+				</section>
+				
+				<!-- Version control -->
+				<section>
+					<section><h1>Version control</h1></section>
+					<section>
+						<h2>What is it?</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Tracks changes to files</li>
+							<li class="fragment">Saves work in multiple locations</li>
+							<li class="fragment">We'll use git and <a href="https://github.com">GitHub</a></li>
+							<li class="fragment">GitHub is a site that hosts code for lots of people</li>
+							<li class="fragment">If you're reading this, you're looking at something hosted on GitHub!</li>
+							<li class="fragment"><a href="https://github.com/explore">Explore GitHub projects</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Account setup</h2>
+						<hr>
+						<p>Sign up for an acoount at <a href="https://github.com">GitHub</a> using your school email. Make sure you know your password</p>
+					</section>
+					<section>
+						<h2>Repository</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Folder containing all your files</li>
+							<li class="fragment">Includes a log of all your changes</li>
+							<li class="fragment">Can access old versions easily</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Setup (web-based)</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Go to <a href="https://github.com">GitHub</a></li>
+							<li class="fragment">Click the green "New Repository" button</li>
+							<li class="fragment">Name your repository tech-ready-python</li>
+							<li class="fragment">Check the box for "Initialize this repository with a README"</li>
+							<li class="fragment">Choose the "Python" .gitignore</li>
+							<li class="fragment">Click the green "Create Repository" button</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Uploading Files (web-based)</h2>
+						<hr>
+						<ul>
+							<li class="fragment">Go to your repository</a></li>
+							<li class="fragment">Click the grey "Upload files" button</li>
+							<li class="fragment">Upload the files you need to run the game (including images!)</li>
+							<li class="fragment">Click the green "Commit changes" button</li>
+							<li class="fragment">You can also edit files from the web interface - select the file and click the pencil icon to edit</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Next Steps</h2>
+						<hr>
+						<p>Git is usually used at the command line, not from GitHub's web interface. For more on using Git, see <a href="https://help.github.com/categories/bootcamp/">GitHub's help page</a></p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
